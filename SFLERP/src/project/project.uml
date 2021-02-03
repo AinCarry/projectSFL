@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_bjCykFzFEeu97KtrE_518g" name="project">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_bkY2YFzFEeu97KtrE_518g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_cgtUsFzFEeu97KtrE_518g" name="Users" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sX9hQFzFEeu97KtrE_518g" name="idUser">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vuy6MFzFEeu97KtrE_518g" name="name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4r1GoFzFEeu97KtrE_518g" name="surname">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-TLJoFzFEeu97KtrE_518g" name="dateBirth">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_EIYpgFzGEeu97KtrE_518g" name="phone">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PX1kgFzGEeu97KtrE_518g" name="afegirUsuari" postcondition="_WGRE0GF7EeuFioeGl-j8iQ" precondition="_Kh6mAGC5EeuvKaimUGKcaw">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_Kh6mAGC5EeuvKaimUGKcaw" name="comprobar que no existeix a la base de dades i que els camps son correctes"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_WGRE0GF7EeuFioeGl-j8iQ" name="ALTA USUARI"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Sp8OcFzGEeu97KtrE_518g" name="borrarUsuari" postcondition="_ZekdYGF7EeuFioeGl-j8iQ" precondition="_QGfB0GC5EeuvKaimUGKcaw">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_QGfB0GC5EeuvKaimUGKcaw" name="comprobar que el dni a esborrar existeix a la taula d'usuaris a la base de dades"/>
+      <ownedRule xmi:type="uml:DurationConstraint" xmi:id="_ZekdYGF7EeuFioeGl-j8iQ" name="borrar usuari"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sjEXIGF9EeuFioeGl-j8iQ" name="modificarDades" postcondition="_sjEXImF9EeuFioeGl-j8iQ" precondition="_sjEXIWF9EeuFioeGl-j8iQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_sjEXIWF9EeuFioeGl-j8iQ" name="COMPROBAR QUE DNI COINCIDEIX"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_sjEXImF9EeuFioeGl-j8iQ" name="MODIFICAR DADES USUARI"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_j2Kp4FzGEeu97KtrE_518g" name="Form" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MhS_wFzHEeu97KtrE_518g" name="idCreador" type="_cgtUsFzFEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_uysMYFzHEeu97KtrE_518g" name="idForm">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xCFcIFzHEeu97KtrE_518g" name="question">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0aGg0FzHEeu97KtrE_518g" name="data">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_21GjoFzHEeu97KtrE_518g" name="hora">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qLmGQGF5EeuFioeGl-j8iQ" name="afegirFormulari" postcondition="_fEe9AGF7EeuFioeGl-j8iQ" precondition="_18ao8GF5EeuFioeGl-j8iQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_18ao8GF5EeuFioeGl-j8iQ" name="comprobar dades formularis amb id creador i que no hi hagi id form repetit"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_fEe9AGF7EeuFioeGl-j8iQ" name="AFEGIR FORMULARI"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3zGc8FzHEeu97KtrE_518g" name="FormAnswer">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BO4a4FzIEeu97KtrE_518g" name="idFormulari" type="_j2Kp4FzGEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FjyloFzIEeu97KtrE_518g" name="idUsuariResposta" type="_cgtUsFzFEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_w4_VEFzIEeu97KtrE_518g" name="answer">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_v865wGF7EeuFioeGl-j8iQ" name="afegirResposta" postcondition="_v865wmF7EeuFioeGl-j8iQ" precondition="_v865wWF7EeuFioeGl-j8iQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_v865wWF7EeuFioeGl-j8iQ" name="FORMULARI I DNI EXISTENTS"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_v865wmF7EeuFioeGl-j8iQ" name="AFEGIM RESPOSTA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xmbp4FzIEeu97KtrE_518g" name="Calendari">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_011lIFzIEeu97KtrE_518g" name="idUsuariCal" type="_cgtUsFzFEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2ZiMgFzIEeu97KtrE_518g" name="idFormCal" type="_j2Kp4FzGEeu97KtrE_518g"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LMPx0GF8EeuFioeGl-j8iQ" name="crearCalendari" postcondition="_LMPx0mF8EeuFioeGl-j8iQ" precondition="_LMPx0WF8EeuFioeGl-j8iQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_LMPx0WF8EeuFioeGl-j8iQ" name="DNI COINCIDENT, ID FORMULARI COINCIDENT"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_LMPx0mF8EeuFioeGl-j8iQ" name="crear calendari"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2xKpYFzIEeu97KtrE_518g" name="Rol">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5nJ_EFzIEeu97KtrE_518g" name="idRol">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_72N3oFzIEeu97KtrE_518g" name="tipus">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__FkvkFzIEeu97KtrE_518g" name="description">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mmUhUGF8EeuFioeGl-j8iQ" name="afegirRol" postcondition="_mmUhUmF8EeuFioeGl-j8iQ" precondition="_mmUhUWF8EeuFioeGl-j8iQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_mmUhUWF8EeuFioeGl-j8iQ" name="QUE LA ID ROL NO SIGUI REPETIDA"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_mmUhUmF8EeuFioeGl-j8iQ" name="CREAR ROL"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CTEmUFzJEeu97KtrE_518g" name="Speciality">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_evZdAFzJEeu97KtrE_518g" name="idSpeciality">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gXbx0FzJEeu97KtrE_518g" name="description">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_g1g08FzJEeu97KtrE_518g" name="UsersRols">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jiD6wFzJEeu97KtrE_518g" name="idUsers" type="_cgtUsFzFEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_luL0EFzJEeu97KtrE_518g" name="idRol" type="_2xKpYFzIEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oXJaYFzJEeu97KtrE_518g" name="idSpeciality" type="_CTEmUFzJEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_H4MmUFzKEeu97KtrE_518g" name="beginDate">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JUQ7sFzKEeu97KtrE_518g" name="endDate">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KvKMYFzKEeu97KtrE_518g" name="Equips">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PARcQFzKEeu97KtrE_518g" name="idEquip">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_RKGPgFzKEeu97KtrE_518g" name="idSpeciality" type="_CTEmUFzJEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TVdT0FzKEeu97KtrE_518g" name="teamName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Uf5tsFzKEeu97KtrE_518g" name="tag">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9rs98GF7EeuFioeGl-j8iQ" name="afegirEquips" postcondition="_9rs98mF7EeuFioeGl-j8iQ" precondition="_9rs98WF7EeuFioeGl-j8iQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_9rs98WF7EeuFioeGl-j8iQ" name="ID EQUIP NO REPETIDA, TAG EQUIP NO REPETIT"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_9rs98mF7EeuFioeGl-j8iQ" name="AFEGIR EQUIP"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VWpIcFzKEeu97KtrE_518g" name="PlayerTeam">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YbgnoFzKEeu97KtrE_518g" name="idUser" type="_cgtUsFzFEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_aRcOgFzKEeu97KtrE_518g" name="idTeam" type="_KvKMYFzKEeu97KtrE_518g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_byQhAFzKEeu97KtrE_518g" name="Matches">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eC8xQFzKEeu97KtrE_518g" name="idTeam" type="_KvKMYFzKEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_f5T18FzKEeu97KtrE_518g" name="idSpeciality" type="_CTEmUFzJEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hTFsUFzKEeu97KtrE_518g" name="result">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ji-rUFzKEeu97KtrE_518g" name="idMatch">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>
