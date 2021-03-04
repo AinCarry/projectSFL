@@ -189,7 +189,7 @@
       <layoutConstraint xsi:type="notation:Bounds" xmi:id="_xmdfElzIEeu97KtrE_518g"/>
     </children>
     <element href="project.uml#_xmbp4FzIEeu97KtrE_518g"/>
-    <layoutConstraint xsi:type="notation:Bounds" xmi:id="_xmc4AVzIEeu97KtrE_518g" x="72" y="366"/>
+    <layoutConstraint xsi:type="notation:Bounds" xmi:id="_xmc4AVzIEeu97KtrE_518g" x="60" y="320"/>
   </children>
   <children xsi:type="notation:Shape" xmi:id="_2xLQcFzIEeu97KtrE_518g" type="Class_Shape">
     <children xsi:type="notation:DecorationNode" xmi:id="_2xL3gFzIEeu97KtrE_518g" type="Class_NameLabel"/>
@@ -391,7 +391,7 @@
       <layoutConstraint xsi:type="notation:Bounds" xmi:id="_VWqWoVzKEeu97KtrE_518g"/>
     </children>
     <element href="project.uml#_VWpIcFzKEeu97KtrE_518g"/>
-    <layoutConstraint xsi:type="notation:Bounds" xmi:id="_VWpvgVzKEeu97KtrE_518g" x="960" y="360"/>
+    <layoutConstraint xsi:type="notation:Bounds" xmi:id="_VWpvgVzKEeu97KtrE_518g" x="940" y="240"/>
   </children>
   <children xsi:type="notation:Shape" xmi:id="_byRvIFzKEeu97KtrE_518g" type="Class_Shape">
     <children xsi:type="notation:DecorationNode" xmi:id="_byRvIlzKEeu97KtrE_518g" type="Class_NameLabel"/>

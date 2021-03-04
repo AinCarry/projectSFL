@@ -92,6 +92,9 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_gXbx0FzJEeu97KtrE_518g" name="description">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GuqQMGYyEeuAa9AHvdjjhA" name="afegirEspecialitat" precondition="_GuqQMWYyEeuAa9AHvdjjhA">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_GuqQMWYyEeuAa9AHvdjjhA" name="COMPROBAR ID NO REPETIDA I DESCRIPCIO DIFERENT"/>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_g1g08FzJEeu97KtrE_518g" name="UsersRols">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_jiD6wFzJEeu97KtrE_518g" name="idUsers" type="_cgtUsFzFEeu97KtrE_518g"/>
